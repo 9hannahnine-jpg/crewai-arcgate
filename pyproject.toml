@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "crewai-arcgate"
+version = "0.1.0"
+description = "Arc Gate runtime governance for CrewAI agents"
+readme = "README.md"
+license = { text = "AGPL-3.0" }
+authors = [{ name = "Hannah Nine", email = "9hannahnine@gmail.com" }]
+keywords = ["crewai", "ai-safety", "prompt-injection", "llm", "agent", "security"]
+requires-python = ">=3.10"
+dependencies = ["crewai>=0.80.0"]
+
+[project.urls]
+Homepage = "https://bendexgeometry.com"
+Repository = "https://github.com/9hannahnine-jpg/arc-gate"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["crewai_arcgate*"]
